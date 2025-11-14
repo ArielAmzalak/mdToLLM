@@ -193,7 +193,7 @@ class MarkItDownApp(TkinterDnD.Tk):
         a entrada for uma *imagem* isolada (PNG/JPG etc.).                     # (ref Real Python)
         """
         if self.use_openai.get() and self.desc_mode.get() == "markitdown":
-            if not os.getenv("OPEN_API_KEY"):
+            if not os.getenv("OPENAI_API_KEY"):
                 self._log("⚠ OPENAI_API_KEY não definido; descrição via MarkItDown desativada.")
                 return MarkItDown()
             client = OpenAI()
