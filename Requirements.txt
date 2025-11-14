@@ -1,0 +1,1 @@
+pip install "markitdown[all]" openai selenium requests beautifulsoup4 tkinterdnd2
